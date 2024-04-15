@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index 1</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <script>
+               // Var : Var can be updated and re-declared.
+      var a = 20;
+      var a = 15;
+      console.log(a);
+
+      // Let : Let can be updated but not re-declared
+      // let x = 10;
+      x = 5;
+      console.log(x);
+
+      // Const : Const can neither be updated nor re-declared 
+      const y = 55;
+      console.log(y);
+
+      //  --------------------------------  //
+
+     // Primitives DataTypes are 7 in JS
+
+      //Null, Number, Bool, BigInt, String, Symbol, undefined.
+      //nn bb ss u
+
+      let a = null;  //Null
+      // let b = 345;   //Number
+      let c = true;  //Bool
+      let d = BigInt(545); //BigInt
+      let e = "FahadKhan"; //String
+      let f = Symbol("This is Symbol"); //Symbol
+      let g; //Undefined
+      console.log(a, b, c, d, e, f, g);
+      console.log(typeof(f));
+
+      // Non-Primitive DataTypes - Object
+
+      const item = {
+          "fahad": true,
+          khan: false,
+          Ilyas: 420,
+          "Asad": undefined
+      }
+      console.log(item["khan"])
+
+      // ------------------------------------- //
+
+      // Chapter 1 - Practise Set .
+
+      // Q1 : Create a varible of type string & try to add number to it.
+
+      let a = "Fahad"
+      let b = 5
+      console.log(a + b)
+
+      // Q2 : Use TypeOf operator to find dataType of last question .
+
+      console.log(typeof (a + b))
+
+      // Q3 : create a const object in JS can u change it to hold numbr late ?
+
+      // Ans: No we cant change it later.
+
+      const x = {
+          name: "Fahad Khan",
+          rollNo: 843
+      }
+      console.log(x["name"])
+      x="Asad khan"
+
+      x['friend']="Ilyas Khan"
+      x['name']="Asad Khan"
+      x['rollNo']=64
+      console.log(x)
+
+      // Q4 : Create 5 Words Dictionary.
+
+      const dict = {
+          nightwalker: "A person who walks about at night or who sleepwalks.",
+          developer: " A person or thing that develops something.",
+          appreciate: "recognize the full worth of.",
+          fault: "An unattractive or unsatisfactory feature, especially in a piece of work or in a person's character.",
+          festoon: "A string or chain of flowers, foliage, ribbon, suspended in a curve between two points."
+      }
+      console.log(dict.developer)
+      console.log(dict['fault'])
+      console.log(dict['nightwalker']) 
+    </script>
+  </body>
+</html>

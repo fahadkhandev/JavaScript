@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index 6</title>
+  </head>
+  <body>
+    <script>
+      function onePlusAve(x, y) {
+        console.log("Done");
+        return 1 + (x + y) / 2;
+      }
+
+      let a = 1;
+      let b = 2;
+      let c = 3;
+
+      console.log("One plus average of a b is ", onePlusAve(a, b));
+      console.log("One plus average of b c is ", 1 + (b + c) / 2); // Without Function
+      console.log("One plus average of a c is ", 1 + (a + c) / 2);
+
+      // Arrow Function : commonly used in JS
+      const sum = (p, q) => {
+        return p + q;
+      };
+      console.log(sum(7, 8));
+      // OR
+      let s = sum(7, 8);
+      console.log(s);
+
+      const hi = () => {
+        console.log("Hello World");
+      };
+      hi();
+    </script>
+  </body>
+</html>
